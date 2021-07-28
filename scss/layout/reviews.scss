@@ -1,0 +1,32 @@
+@use "../base/mixins";
+@use "../base/variables";
+
+.splitSection {
+  display: flex;
+}
+
+.col {
+  width: 50%;
+}
+
+img.reviewImage {
+  width: 50vw;
+  height: auto;
+  min-height: 100%;
+}
+
+.img-col {
+  padding-top: 150px;
+  opacity: 0.3;
+}
+
+.text-col {
+  @include mixins.review;
+  padding-top: 45vh;
+  opacity: 0.1;
+}
+
+.review-1 {
+  background-color: darken(variables.$mainPink, 70%);
+  color: white;
+}

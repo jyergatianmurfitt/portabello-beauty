@@ -1,0 +1,67 @@
+@use "../base/mixins";
+@use "../base/variables";
+
+///////////////Transitions
+.section-1 {
+  transition: all 2000ms ease-in-out;
+}
+
+#logo {
+  transition: all 3000ms cubic-bezier(.13,1.96,1,1);
+}
+
+.hover {
+  transition: color 250ms ease-in;
+}
+
+.sloganTopRow {
+  transition: all 2500ms ease-in-out;
+}
+
+.sloganBottomRow {
+  transition: all 2500ms ease-in-out;
+}
+
+.navListContainer {
+  transition: all 250ms ease-in;
+}
+
+.navItemList {
+  transition: all 500ms ease-out;
+}
+
+.productsLeft, .productsRight {
+  transition: all 6000ms cubic-bezier(.22,1.61,.27,1.07);
+}
+
+.productsLeft:hover, .productsRight:hover {
+  transition: all 250ms ease-in;
+}
+
+.img-col {
+  transition: all 1000ms ease-in-out;
+}
+
+.text-col {
+  transition: all 1500ms ease-out;
+}
+
+.contact, .info, .socialList {
+  transition: all 500ms ease-out;
+}
+
+
+///////////////Animations
+.saleBanner {
+  animation: saleBanner 4000ms linear alternate infinite;
+}
+
+@keyframes saleBanner {
+  from {
+    padding-right: 50vw;
+  }
+
+  to {
+    padding-right: 0vw;
+  }
+}

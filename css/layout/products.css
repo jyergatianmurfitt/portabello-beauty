@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@700&family=Playfair+Display+SC&family=Raleway:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital@1&display=swap");
+/**** Colours ****/
+/**** Font-sizes ****/
+/**** Fonts ****/
+.saleBanner {
+  padding-top: 100px;
+  text-align: right;
+}
+
+.sale {
+  font-size: 30px;
+  text-transform: uppercase;
+  word-spacing: 200px;
+  color: #ff5757;
+}
+
+.section-2 {
+  background-color: #ffd7d7;
+}
+
+.productList {
+  padding-bottom: 100px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.productItem {
+  font-size: 6rem;
+  text-transform: capitalize;
+  color: black;
+  font-family: "Playfair Display SC", serif;
+  letter-spacing: 6px;
+  line-height: 50px;
+}
+.productItem:hover {
+  color: #ffb121;
+  font-size: 6.5rem;
+  cursor: pointer;
+}
+
+.productsLeft {
+  padding-right: 500px;
+}
+
+.productsRight {
+  padding-left: 500px;
+}
+
+/*# sourceMappingURL=products.css.map */

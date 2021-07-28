@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@700&family=Playfair+Display+SC&family=Raleway:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital@1&display=swap");
+/**** Colours ****/
+/**** Font-sizes ****/
+/**** Fonts ****/
+.navBar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.navList, .navItem a {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+  font-size: 18px;
+  color: #FF8A8A;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  line-height: 40px;
+}
+.navList :hover, .navItem a :hover {
+  color: #bd0000;
+}
+
+.navListContainer {
+  margin-top: 50px;
+  width: 0px;
+  height: 100vh;
+  float: right;
+  z-index: 1;
+}
+
+.navItemList {
+  padding-top: 20px;
+  width: 0px;
+  height: 100%;
+  float: right;
+  z-index: 1;
+}
+
+.navListContainer.show {
+  background-color: #ffb121;
+  width: 20%;
+  display: block;
+  z-index: 1;
+}
+
+.navItemList.show {
+  background-color: white;
+  width: 100%;
+  display: block;
+  padding-top: 40px;
+  z-index: 1;
+}
+
+#hamburger {
+  font-size: 26px;
+  height: 20px;
+  float: right;
+  margin-right: 40px;
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  z-index: 1;
+}
+
+.hover:hover {
+  cursor: pointer;
+}
+
+.hiddenList {
+  display: none;
+  padding-left: 20px;
+}
+
+#navLogo {
+  width: auto;
+  height: 200px;
+}
+
+#logo {
+  position: absolute;
+  top: -200px;
+}
+
+/*# sourceMappingURL=navbar.css.map */

@@ -1,0 +1,71 @@
+@use "../base/mixins";
+@use "../base/variables";
+
+
+/////Tablet
+@media screen and (max-width: 1250px) {
+  //.navItem {
+  //    display: none;
+  //  }
+
+  .navListContainer.show {
+    width: 80%;
+  }
+
+  .section-1 {
+    background-image: url('../images/smudge-mobile.jpg');
+  }
+
+  .sloganMain {
+    font-size: variables.$fontLg;
+    margin-top: 5%;
+  }
+
+  .sloganText {
+    line-height: 6rem;
+  }
+
+  .sloganTopRow {
+    padding-bottom: 15%;
+  }
+
+  .saleBanner {
+    display: none;
+  }
+
+}
+
+
+/////Mobile
+@media screen and (max-width: 980px) {
+  .sloganMain {
+    font-size: variables.$fontLg;
+    margin-top: 20%;
+    overflow: hidden;
+  }
+
+  .sloganText {
+    line-height: 6rem;
+  }
+
+  .sloganTopRow {
+    padding-bottom: 30%;
+  }
+
+  .review-1 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .review-2 {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+
+  .img-col{
+    display: block;
+    margin: auto;
+    padding-bottom: 20px;
+  }
+
+}

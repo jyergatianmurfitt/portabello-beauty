@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@700&family=Playfair+Display+SC&family=Raleway:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital@1&display=swap");
+/**** Colours ****/
+/**** Font-sizes ****/
+/**** Fonts ****/
+@media screen and (max-width: 1250px) {
+  .navListContainer.show {
+    width: 80%;
+  }
+
+  .section-1 {
+    background-image: url("../images/smudge-mobile.jpg");
+  }
+
+  .sloganMain {
+    font-size: 46px;
+    margin-top: 5%;
+  }
+
+  .sloganText {
+    line-height: 6rem;
+  }
+
+  .sloganTopRow {
+    padding-bottom: 15%;
+  }
+
+  .saleBanner {
+    display: none;
+  }
+}
+@media screen and (max-width: 980px) {
+  .sloganMain {
+    font-size: 46px;
+    margin-top: 20%;
+    overflow: hidden;
+  }
+
+  .sloganText {
+    line-height: 6rem;
+  }
+
+  .sloganTopRow {
+    padding-bottom: 30%;
+  }
+
+  .review-1 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .review-2 {
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+
+  .img-col {
+    display: block;
+    margin: auto;
+    padding-bottom: 20px;
+  }
+}
+
+/*# sourceMappingURL=media-queries.css.map */

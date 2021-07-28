@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@700&family=Playfair+Display+SC&family=Raleway:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital@1&display=swap");
+/**** Colours ****/
+/**** Font-sizes ****/
+/**** Fonts ****/
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ffb121;
+}
+
+.section-1 {
+  background-image: url("../images/smudge-left.jpg");
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+.sloganMain {
+  font-family: "Playfair Display SC", serif;
+  font-size: 4.5rem;
+  margin-top: 110px;
+  z-index: 0;
+}
+
+.sloganText {
+  margin-top: 0;
+  line-height: 11rem;
+  z-index: 0;
+}
+
+.sloganTopRow {
+  text-align: right;
+  padding-right: 60px;
+  opacity: 0;
+  top: 80px;
+  right: 0px;
+  position: absolute;
+  z-index: 0;
+}
+
+.sloganBottomRow {
+  padding-left: 60px;
+  opacity: 0;
+  bottom: 30px;
+  position: absolute;
+  z-index: 0;
+}
+
+.sloganFontChange {
+  font-family: "Raleway", sans-serif;
+  color: #FF8A8A;
+}
+
+/*# sourceMappingURL=home.css.map */

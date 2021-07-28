@@ -1,0 +1,47 @@
+@use "../base/variables";
+
+@mixin nav-item {
+  font-size: variables.$fontMd;
+  color: variables.$mainPink;
+  font-family: variables.$straightLight;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  line-height: 40px;
+  :hover {
+    color: darken(variables.$mainPink, 40%);
+  }
+}
+
+@mixin product {
+  font-size: variables.$fontXxl;
+  text-transform: capitalize;
+  color: black;
+  font-family: variables.$curly;
+  letter-spacing: 6px;
+  line-height: 50px;
+}
+
+@mixin review {
+  text-align: center;
+  h2 {
+    font-size: variables.$fontXl;
+    font-family: variables.$straightLight;
+    margin-top: 6rem;
+  }
+  h3 {
+    font-size: variables.$fontMd;
+    font-family: variables.$straightBold;
+    margin: 5px 0;
+  }
+  h4 {
+    margin: 5px 0;
+  }
+  p {
+    font-size: variables.$fontMd;
+    font-family: variables.$straightLight;
+    width: 70%;
+    margin: 6rem auto;
+    letter-spacing: 1.5px;
+    line-height: 2rem;
+  }
+}

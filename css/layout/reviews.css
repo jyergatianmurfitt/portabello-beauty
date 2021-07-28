@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@700&family=Playfair+Display+SC&family=Raleway:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital@1&display=swap");
+/**** Colours ****/
+/**** Font-sizes ****/
+/**** Fonts ****/
+.splitSection {
+  display: flex;
+}
+
+.col {
+  width: 50%;
+}
+
+img.reviewImage {
+  width: 50vw;
+  height: auto;
+  min-height: 100%;
+}
+
+.img-col {
+  padding-top: 150px;
+  opacity: 0.3;
+}
+
+.text-col {
+  text-align: center;
+  padding-top: 45vh;
+  opacity: 0.1;
+}
+.text-col h2 {
+  font-size: 4.5rem;
+  font-family: "Raleway", sans-serif;
+  margin-top: 6rem;
+}
+.text-col h3 {
+  font-size: 18px;
+  font-family: "Libre Franklin", sans-serif;
+  margin: 5px 0;
+}
+.text-col h4 {
+  margin: 5px 0;
+}
+.text-col p {
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  width: 70%;
+  margin: 6rem auto;
+  letter-spacing: 1.5px;
+  line-height: 2rem;
+}
+
+.review-1 {
+  background-color: #240000;
+  color: white;
+}
+
+/*# sourceMappingURL=reviews.css.map */

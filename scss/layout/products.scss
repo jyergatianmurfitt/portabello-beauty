@@ -1,0 +1,42 @@
+@use "../base/mixins";
+@use "../base/variables";
+
+.saleBanner {
+  padding-top: 100px;
+  text-align: right;
+}
+
+.sale {
+  font-size: 30px;
+  text-transform: uppercase;
+  word-spacing: 200px;
+  color: darken(variables.$mainPink, 10%);
+}
+
+.section-2 {
+  background-color: lighten(variables.$mainPink, 15%);
+}
+
+.productList {
+  padding-bottom: 100px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.productItem {
+  @include mixins.product;
+  &:hover {
+    color: variables.$mainOrange;
+    font-size: 6.5rem;
+    //font-style: italic;
+    cursor: pointer;
+  }
+}
+
+.productsLeft {
+  padding-right: 500px;
+}
+
+.productsRight {
+  padding-left: 500px;
+}

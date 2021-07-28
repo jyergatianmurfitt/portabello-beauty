@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@700&family=Playfair+Display+SC&family=Raleway:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital@1&display=swap");
+/**** Colours ****/
+/**** Font-sizes ****/
+/**** Fonts ****/
+footer {
+  text-align: center;
+  background-color: #240000;
+  color: white;
+  text-align: left;
+  padding-left: 60px;
+}
+footer h2 {
+  font-size: 4.5rem;
+  font-family: "Raleway", sans-serif;
+  margin-top: 6rem;
+}
+footer h3 {
+  font-size: 18px;
+  font-family: "Libre Franklin", sans-serif;
+  margin: 5px 0;
+}
+footer h4 {
+  margin: 5px 0;
+}
+footer p {
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  width: 70%;
+  margin: 6rem auto;
+  letter-spacing: 1.5px;
+  line-height: 2rem;
+}
+footer h3 {
+  font-size: 18px;
+  font-family: "Playfair Display SC", serif;
+  margin: 5px 0;
+}
+footer h4 {
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  text-transform: capitalize;
+  margin: 5px 0;
+}
+
+.contact {
+  padding-top: 50px;
+}
+
+.locations {
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+
+.location {
+  margin-top: 60px;
+}
+
+.splitSection {
+  display: flex;
+}
+
+.col {
+  width: 50%;
+}
+
+.info {
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+
+.infoData {
+  padding: 5px 0;
+}
+
+.social {
+  cursor: pointer;
+}
+.social :hover {
+  color: #ffb121;
+  padding-left: 5px;
+  transition: all 500ms ease-out;
+}
+
+.contact, .info, .socialList {
+  opacity: 0.5;
+}
+
+/*# sourceMappingURL=footer.css.map */

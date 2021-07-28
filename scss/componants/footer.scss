@@ -1,0 +1,65 @@
+@use "../base/mixins";
+@use "../base/variables";
+
+footer {
+  @include mixins.review;
+  background-color: darken(variables.$mainPink, 70%);
+  color: white;
+  text-align: left;
+  padding-left: 60px;
+
+  h3 {
+    font-size: variables.$fontMd;
+    font-family: variables.$curly;
+    margin: 5px 0;
+  }
+  h4 {
+    font-size: variables.$fontMd;
+    font-family: variables.$straightLight;
+    text-transform: capitalize;
+    margin: 5px 0;
+  }
+}
+
+.contact {
+  padding-top: 50px;
+}
+
+.locations {
+  margin-top: 50px;
+  padding-bottom: 50px;
+}
+
+.location {
+  margin-top: 60px;
+}
+
+.splitSection {
+  display: flex;
+}
+
+.col {
+  width: 50%;
+}
+
+.info {
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+
+.infoData {
+  padding: 5px 0;
+}
+
+.social {
+  cursor: pointer;
+  :hover {
+    color: variables.$mainOrange;
+    padding-left: 5px;
+    transition: all 500ms ease-out;
+  }
+}
+
+.contact, .info, .socialList {
+  opacity: .5;
+}
