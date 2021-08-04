@@ -16,10 +16,20 @@ function homeLoad(){
          sloganBottomRow.style.opacity = '1';
      }, 1000);
 
-     setTimeout(function(){
-         sloganBottomRow.style.paddingLeft = '30px';
-         sloganTopRow.style.paddingRight = '30px';
-     }, 500);
+     console.log(window.innerWidth);
+
+     if (window.innerWidth > 790) {
+       setTimeout(function(){
+           sloganBottomRow.style.paddingLeft = '30px';
+           sloganTopRow.style.paddingRight = '30px';
+       }, 500);
+     } else if (window.innerWidth <= 790) {
+       setTimeout(function(){
+           sloganBottomRow.style.paddingLeft = '60px';
+           sloganTopRow.style.paddingRight = '60px';
+       }, 500);
+     }
+
 
 
 

@@ -12,21 +12,17 @@
     width: 80%;
   }
 
-  .section-1 {
-    background-image: url('../images/smudge-mobile.jpg');
-  }
-
   .sloganMain {
     font-size: variables.$fontLg;
-    margin-top: 5%;
+    margin-top: 15%;
   }
 
   .sloganText {
-    line-height: 6rem;
+    line-height: 11rem;
   }
 
   .sloganTopRow {
-    padding-bottom: 15%;
+    padding-bottom: 30%;
   }
 
   .saleBanner {
@@ -37,19 +33,42 @@
 
 
 /////Mobile
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 790px) {
+
+  .section-1 {
+    background: none;
+    background-color: #e8e3e9;
+  }
+
   .sloganMain {
-    font-size: variables.$fontLg;
-    margin-top: 20%;
     overflow: hidden;
   }
 
   .sloganText {
-    line-height: 6rem;
+    font-size: variables.$fontLg;
+    overflow: hidden;
+    line-height: 5rem;
+    text-align: center;
   }
 
   .sloganTopRow {
-    padding-bottom: 30%;
+    margin-top: 20%;
+    padding-bottom: 10%;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .sloganBottomRow {
+    text-align: center;
+    margin-bottom: 18%;
+    padding-right: 0;
+    padding-left: 0;
+    width: 60%
+  }
+
+  .productList {
+    overflow: hidden;
   }
 
   .review-1 {
