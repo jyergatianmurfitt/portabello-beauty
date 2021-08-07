@@ -16,8 +16,6 @@ function homeLoad(){
          sloganBottomRow.style.opacity = '1';
      }, 1000);
 
-     console.log(window.innerWidth);
-
      if (window.innerWidth > 790) {
        setTimeout(function(){
            sloganBottomRow.style.paddingLeft = '30px';
@@ -38,7 +36,8 @@ function homeLoad(){
   var productsRight = document.querySelectorAll('.productsRight');
   var productsContainer = document.querySelector('.productsContainer');
 
-  productsContainer.onmousemove = function () {
+  if (window.innerWidth > 790) {
+   productsContainer.onmousemove = function () {
     setTimeout(function() {
       productsLeft.forEach((product, i) => {
         product.style.paddingRight = '0px';
@@ -48,6 +47,14 @@ function homeLoad(){
         });
     },0);
   };
+  } else {
+   productsLeft.forEach((product, i) => {
+    product.style.paddingRight = '0px';
+  });
+    productsRight.forEach((product, i) => {
+      product.style.paddingLeft = '0px';
+    });
+  }
 
 
   ////Reviews
@@ -55,7 +62,8 @@ function homeLoad(){
   var imgCol = document.querySelectorAll('.img-col');
   var section = document.querySelectorAll('.section');
 
-  for (let i = 0; i < section.length; i++) {
+  if (window.innerWidth > 790) {
+   for (let i = 0; i < section.length; i++) {
     section[i].onmousemove = function () {
       setTimeout(function(){
           textCol[i].style.paddingTop = '0px';
@@ -65,7 +73,16 @@ function homeLoad(){
 
       },0);
     };
+   }
+  } else {
+   for (let i = 0; i < section.length; i++) {
+    textCol[i].style.paddingTop = '0px';
+    textCol[i].style.opacity = '1';
+    imgCol[i].style.paddingTop = '0px';
+    imgCol[i].style.opacity = '1';
+   }
   }
+
 
 
   ////Footer
@@ -74,15 +91,19 @@ function homeLoad(){
   var info = document.querySelector('.info');
   var social = document.querySelector('.socialList');
 
-    footer.onmousemove = function () {
-      setTimeout(function(){
-          contact.style.opacity = '1';
-          info.style.opacity = '1';
-          social.style.opacity = '1';
-      },0);
-    };
-
-
+  if (window.innerWidth > 790) {
+   footer.onmousemove = function () {
+    setTimeout(function(){
+        contact.style.opacity = '1';
+        info.style.opacity = '1';
+        social.style.opacity = '1';
+    },0);
+   };
+  } else {
+  contact.style.opacity = '1';
+  info.style.opacity = '1';
+  social.style.opacity = '1';
+  }
 };
 
 
