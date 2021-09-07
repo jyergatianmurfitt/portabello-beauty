@@ -20,23 +20,22 @@
 .productList {
   padding-bottom: 100px;
   padding-top: 10px;
-  text-align: center;
+  font-style: italic;
+}
+
+.leftItem {
+  text-align: left;
+}
+
+.rightItem {
+  text-align: right;
 }
 
 .productItem {
   @include mixins.product;
   &:hover {
     color: variables.$mainOrange;
-    font-size: 6.5rem;
     //font-style: italic;
     cursor: pointer;
   }
-}
-
-.productsLeft {
-  padding-right: 500px;
-}
-
-.productsRight {
-  padding-left: 500px;
 }

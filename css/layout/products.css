@@ -22,7 +22,15 @@
 .productList {
   padding-bottom: 100px;
   padding-top: 10px;
-  text-align: center;
+  font-style: italic;
+}
+
+.leftItem {
+  text-align: left;
+}
+
+.rightItem {
+  text-align: right;
 }
 
 .productItem {
@@ -35,16 +43,7 @@
 }
 .productItem:hover {
   color: #ffb121;
-  font-size: 6.5rem;
   cursor: pointer;
-}
-
-.productsLeft {
-  padding-right: 500px;
-}
-
-.productsRight {
-  padding-left: 500px;
 }
 
 /*# sourceMappingURL=products.css.map */

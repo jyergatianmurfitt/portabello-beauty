@@ -30,35 +30,9 @@ function homeLoad(){
 
 
 
-
-  ////Products
-  var productsLeft = document.querySelectorAll('.productsLeft');
-  var productsRight = document.querySelectorAll('.productsRight');
-  var productsContainer = document.querySelector('.productsContainer');
-
-  if (window.innerWidth > 790) {
-   productsContainer.onmousemove = function () {
-    setTimeout(function() {
-      productsLeft.forEach((product, i) => {
-        product.style.paddingRight = '0px';
-      });
-        productsRight.forEach((product, i) => {
-          product.style.paddingLeft = '0px';
-        });
-    },0);
-  };
-  } else {
-   productsLeft.forEach((product, i) => {
-    product.style.paddingRight = '0px';
-  });
-    productsRight.forEach((product, i) => {
-      product.style.paddingLeft = '0px';
-    });
-  }
-
-
-  ////Reviews
+  ////Products & Reviews
   const scrollElements = document.querySelectorAll(".scrollLoad");
+  const scrollProducts = document.querySelectorAll(".productsContainer");
 
   const elementInView = (el, scrollOffset = 0) => {
     const elementTop = el.getBoundingClientRect().top;
@@ -73,10 +47,32 @@ function homeLoad(){
     element.classList.add("scrolled");
   };
 
+  const displayScrollProducts = (element) => {
+      window.addEventListener('scroll', function(e) {
+
+        const target = document.querySelectorAll('.slide');
+
+        var index = 0, length = target.length;
+        for (index; index < length; index++) {
+          if(window.innerWidth > 790) {
+            var posX = window.pageYOffset * target[index].dataset.ratex;
+          } else {
+            var posX = window.pageYOffset * target[index].dataset.ratex / 2;
+          }
+          target[index].style.transform = 'translate3d('+posX+'px, 0px, 0px)';
+        }
+    });
+  };
+
   const handleScrollAnimation = () => {
     scrollElements.forEach((el) => {
       if (elementInView(el, 100)) {
         displayScrollElement(el);
+      }
+    })
+    scrollProducts.forEach((el) => {
+      if (elementInView(el, 100)) {
+        displayScrollProducts(el);
       }
     })
   }
