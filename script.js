@@ -58,53 +58,59 @@ function homeLoad(){
 
 
   ////Reviews
-  var textCol = document.querySelectorAll('.text-col');
-  var imgCol = document.querySelectorAll('.img-col');
-  var section = document.querySelectorAll('.section');
+  const scrollElements = document.querySelectorAll(".scrollLoad");
 
-  if (window.innerWidth > 790) {
-   for (let i = 0; i < section.length; i++) {
-    section[i].onmousemove = function () {
-      setTimeout(function(){
-          textCol[i].style.paddingTop = '0px';
-          textCol[i].style.opacity = '1';
-          imgCol[i].style.paddingTop = '0px';
-          imgCol[i].style.opacity = '1';
+  const elementInView = (el, scrollOffset = 0) => {
+    const elementTop = el.getBoundingClientRect().top;
 
-      },0);
-    };
-   }
-  } else {
-   for (let i = 0; i < section.length; i++) {
-    textCol[i].style.paddingTop = '0px';
-    textCol[i].style.opacity = '1';
-    imgCol[i].style.paddingTop = '0px';
-    imgCol[i].style.opacity = '1';
-   }
+    return (
+      elementTop <=
+      ((window.innerHeight || document.documentElement.clientHeight) - scrollOffset)
+    );
+  };
+
+  const displayScrollElement = (element) => {
+    element.classList.add("scrolled");
+  };
+
+  const handleScrollAnimation = () => {
+    scrollElements.forEach((el) => {
+      if (elementInView(el, 100)) {
+        displayScrollElement(el);
+      }
+    })
   }
+
+  setTimeout(function(){
+    window.addEventListener('scroll', () => {
+      handleScrollAnimation();
+    })
+  }, 500);
+
 
 
 
   ////Footer
-  var footer = document.querySelector('.footer');
-  var contact = document.querySelector('.contact');
-  var info = document.querySelector('.info');
-  var social = document.querySelector('.socialList');
+    var footer = document.querySelector('.footer');
+    var contact = document.querySelector('.contact');
+    var info = document.querySelector('.info');
+    var social = document.querySelector('.socialList');
 
-  if (window.innerWidth > 790) {
-   footer.onmousemove = function () {
-    setTimeout(function(){
-        contact.style.opacity = '1';
-        info.style.opacity = '1';
-        social.style.opacity = '1';
-    },0);
-   };
-  } else {
-  contact.style.opacity = '1';
-  info.style.opacity = '1';
-  social.style.opacity = '1';
-  }
-};
+    if (window.innerWidth > 790) {
+     footer.onmousemove = function () {
+      setTimeout(function(){
+          contact.style.opacity = '1';
+          info.style.opacity = '1';
+          social.style.opacity = '1';
+      },0);
+     };
+    } else {
+    contact.style.opacity = '1';
+    info.style.opacity = '1';
+    social.style.opacity = '1';
+    }
+  };
+
 
 
 

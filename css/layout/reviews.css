@@ -48,6 +48,16 @@ img.reviewImage {
   letter-spacing: 1.5px;
   line-height: 2rem;
 }
+@media screen and (max-width: 790px) {
+  .text-col h2 {
+    font-size: 46px;
+  }
+}
+
+.text-col.scrolled, .img-col.scrolled {
+  padding-top: 0px;
+  opacity: 1;
+}
 
 .review-1 {
   background-color: #240000;

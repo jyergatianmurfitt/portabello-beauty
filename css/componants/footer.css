@@ -31,6 +31,11 @@ footer p {
   letter-spacing: 1.5px;
   line-height: 2rem;
 }
+@media screen and (max-width: 790px) {
+  footer h2 {
+    font-size: 46px;
+  }
+}
 footer h3 {
   font-size: 18px;
   font-family: "Playfair Display SC", serif;
@@ -69,6 +74,11 @@ footer h4 {
   padding-bottom: 30px;
 }
 
+.phone {
+  text-decoration: none;
+  color: white;
+}
+
 .infoData {
   padding: 5px 0;
 }
@@ -83,6 +93,10 @@ footer h4 {
 }
 
 .contact, .info, .socialList {
+  opacity: 0.5;
+}
+
+.contact.scrolled, .info.scrolled, .socialList.scrolled {
   opacity: 0.5;
 }
 

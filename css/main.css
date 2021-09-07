@@ -177,6 +177,11 @@ footer p {
   letter-spacing: 1.5px;
   line-height: 2rem;
 }
+@media screen and (max-width: 790px) {
+  footer h2 {
+    font-size: 46px;
+  }
+}
 footer h3 {
   font-size: 18px;
   font-family: "Playfair Display SC", serif;
@@ -215,6 +220,11 @@ footer h4 {
   padding-bottom: 30px;
 }
 
+.phone {
+  text-decoration: none;
+  color: white;
+}
+
 .infoData {
   padding: 5px 0;
 }
@@ -229,6 +239,10 @@ footer h4 {
 }
 
 .contact, .info, .socialList {
+  opacity: 0.5;
+}
+
+.contact.scrolled, .info.scrolled, .socialList.scrolled {
   opacity: 0.5;
 }
 
@@ -371,6 +385,16 @@ img.reviewImage {
   letter-spacing: 1.5px;
   line-height: 2rem;
 }
+@media screen and (max-width: 790px) {
+  .text-col h2 {
+    font-size: 46px;
+  }
+}
+
+.text-col.scrolled, .img-col.scrolled {
+  padding-top: 0px;
+  opacity: 1;
+}
 
 .review-1 {
   background-color: #240000;
@@ -410,18 +434,18 @@ img.reviewImage {
   }
 
   .sloganText {
-    font-size: 46px;
     overflow: hidden;
     line-height: 5rem;
     text-align: center;
   }
 
   .sloganTopRow {
-    margin-top: 20%;
+    margin-top: 30%;
     padding-bottom: 10%;
     padding-left: 0;
     padding-right: 0;
     text-align: center;
+    font-size: 46px;
   }
 
   .sloganBottomRow {
@@ -430,10 +454,15 @@ img.reviewImage {
     padding-right: 0;
     padding-left: 0;
     width: 60%;
+    font-size: 38px;
   }
 
   .productList {
     overflow: hidden;
+  }
+
+  .productItem {
+    font-size: 46px;
   }
 
   .review-1 {
@@ -450,6 +479,10 @@ img.reviewImage {
     display: block;
     margin: auto;
     padding-bottom: 20px;
+  }
+
+  footer {
+    padding-left: 10px;
   }
 }
 

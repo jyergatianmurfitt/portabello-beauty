@@ -44,4 +44,9 @@
     letter-spacing: 1.5px;
     line-height: 2rem;
   }
+  @media screen and (max-width: 790px) {
+    h2 {
+      font-size: variables.$fontLg;
+    }
+  }
 }

@@ -26,6 +26,11 @@ img.reviewImage {
   opacity: 0.1;
 }
 
+.text-col.scrolled, .img-col.scrolled {
+  padding-top: 0px;
+  opacity: 1;
+}
+
 .review-1 {
   background-color: darken(variables.$mainPink, 70%);
   color: white;

@@ -47,6 +47,11 @@ footer {
   padding-bottom: 30px;
 }
 
+.phone {
+  text-decoration: none;
+  color: white;
+}
+
 .infoData {
   padding: 5px 0;
 }
@@ -61,5 +66,9 @@ footer {
 }
 
 .contact, .info, .socialList {
+  opacity: .5;
+}
+
+.contact.scrolled, .info.scrolled, .socialList.scrolled {
   opacity: .5;
 }

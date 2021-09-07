@@ -36,18 +36,18 @@
   }
 
   .sloganText {
-    font-size: 46px;
     overflow: hidden;
     line-height: 5rem;
     text-align: center;
   }
 
   .sloganTopRow {
-    margin-top: 20%;
+    margin-top: 30%;
     padding-bottom: 10%;
     padding-left: 0;
     padding-right: 0;
     text-align: center;
+    font-size: 46px;
   }
 
   .sloganBottomRow {
@@ -56,10 +56,15 @@
     padding-right: 0;
     padding-left: 0;
     width: 60%;
+    font-size: 38px;
   }
 
   .productList {
     overflow: hidden;
+  }
+
+  .productItem {
+    font-size: 46px;
   }
 
   .review-1 {
@@ -76,6 +81,10 @@
     display: block;
     margin: auto;
     padding-bottom: 20px;
+  }
+
+  footer {
+    padding-left: 10px;
   }
 }
 
