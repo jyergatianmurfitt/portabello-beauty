@@ -24,7 +24,7 @@ function homeLoad(){
      } else if (window.innerWidth <= 790) {
        setTimeout(function(){
            sloganBottomRow.style.paddingLeft = '60px';
-           sloganTopRow.style.paddingRight = '60px';
+           sloganTopRow.style.paddingRight = '30px';
        }, 500);
      }
 
@@ -54,10 +54,10 @@ function homeLoad(){
 
         var index = 0, length = target.length;
         for (index; index < length; index++) {
-          if(window.innerWidth > 790) {
+          if(window.innerWidth > 990) {
             var posX = window.pageYOffset * target[index].dataset.ratex;
           } else {
-            var posX = window.pageYOffset * target[index].dataset.ratex / 2;
+            var posX = window.pageYOffset * target[index].dataset.ratex / 4;
           }
           target[index].style.transform = 'translate3d('+posX+'px, 0px, 0px)';
         }
