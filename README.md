@@ -1,17 +1,11 @@
 # Portabello Beauty
 This is a marketing website for beauty and/or skincare products.
 
-## Motivation
-The purpose of building this was to learn how to use transitions and animations and initiate them upon events by using JavaScript.
-
 ## Tech/framework used
 <b>Built with</b>
 - [HTML]
 - [SASS]
 - [JavaScript]
-
-## Installation
-To install this project simply click the green 'Code' button and download the ZIP file. Save the file to your desired directory and edit the contents in your favourite text editor. In order to edit the .scss files you will need to use a compiler to compile the scss folder to the css folder.
 
 ## Contribute
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
